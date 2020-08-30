@@ -14,7 +14,7 @@ class Customer(models.Model):
         return self.name
 
 class Movie_detail(models.Model):
-    movie_name=models.CharField(max_length=100, blank=False, unique=True)
+    movie_name=models.CharField(max_length=100, blank=False, unique=False)
     movie_time=models.DateTimeField(auto_now=False, auto_now_add=False, null=False)
     
     def __str__(self):
