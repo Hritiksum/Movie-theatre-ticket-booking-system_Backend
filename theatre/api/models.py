@@ -18,7 +18,8 @@ class Movie_detail(models.Model):
     movie_time=models.DateTimeField(auto_now=False, auto_now_add=False, null=False)
     
     def __str__(self):
-        return self.movie_name
+        return "%s (Time:-%s)" % (self.movie_name, self.movie_time)
+
 
 class Ticket_detail(models.Model):
     customer=models.ForeignKey(Customer,on_delete=models.CASCADE)
