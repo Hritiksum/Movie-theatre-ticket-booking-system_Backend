@@ -53,3 +53,15 @@ def BuyTicket(request):
 		serializer.save()
 
 	return Response(serializer.data)
+
+
+@api_view(['POST'])
+#Update Movie timing
+def UpdateMovieTiming(request, pk):
+	movie = Movie_detail.objects.get(id=pk)
+	serializer = MovieSerializer(instance=movie, data=request.data)
+
+	if serializer.is_valid():
+		serializer.save()
+
+	return Response(serializer.data)

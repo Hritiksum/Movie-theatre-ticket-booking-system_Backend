@@ -7,4 +7,5 @@ urlpatterns = [
     path('ticketorderlist', views.TicketOrderList, name="TicketOrderList"),
     path('userdetails/<str:pk>/', views.UserDetails, name="UserDetails"),
     path('buyticket', views.BuyTicket, name="BuyTicket"),
+    path('updatemovietiming/<str:pk>/', views.UpdateMovieTiming, name="UpdateMovieTiming"),
 ]
