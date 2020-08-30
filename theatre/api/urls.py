@@ -8,4 +8,8 @@ urlpatterns = [
     path('userdetails/<str:pk>/', views.UserDetails, name="UserDetails"),
     path('buyticket', views.BuyTicket, name="BuyTicket"),
     path('updatemovietiming/<str:pk>/', views.UpdateMovieTiming, name="UpdateMovieTiming"),
+    path('deleteticket/<str:Tid>/', views.DeleteTicket, name="DeleteTicket"),
+    path('moviedetails/<str:Mid>/', views.MovieDetails, name="MovieDetails"),
+    path('moviedelete/<str:Mid>/', views.MovieDelete, name="MovieDelete"),
+    path('movietime/<str:mt>/', views.MovieTime, name="MovieTime"),
 ]
