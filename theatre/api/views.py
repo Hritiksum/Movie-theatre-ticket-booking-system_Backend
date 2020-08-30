@@ -33,7 +33,7 @@ def AvailTicketList(request):
 
 @api_view(['GET'])
 #tickes sold list
-def TicketOrderList(request):
+def TicketOrderedList(request):
 	try:
 		Ticketorderlist = Ticket_detail.objects.all().order_by('id')
 		serializer = TicketSerializer(Ticketorderlist, many=True)
@@ -123,3 +123,23 @@ def MovieTime(request, mt):
 		return Response(serializer.data)
 	except:
 		return Response(None)
+
+
+#@api_view(['GET'])
+@api_view(['DELETE'])
+def MovieRangeDelete(request):
+	from datetime import datetime, timedelta
+	time_threshold = datetime.now() + timedelta(hours=8)
+	event=Movie_detail.objects.filter(movie_time__range=(datetime.now(),time_threshold))
+	#serializer = MovieSerializer(event, many=True)
+	event.delete()
+	return Response("Item deleted")
+
+
+@api_view(['GET'])
+def MovieRangeView(request):
+	from datetime import datetime, timedelta
+	time_threshold = datetime.now() + timedelta(hours=8)
+	event=Movie_detail.objects.filter(movie_time__range=(datetime.now(),time_threshold))
+	serializer = MovieSerializer(event, many=True)
+	return Response(serializer.data)
