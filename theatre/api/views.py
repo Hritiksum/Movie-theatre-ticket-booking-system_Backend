@@ -5,6 +5,8 @@ from rest_framework.response import Response
 from .serializers import CustomerSerializer,MovieSerializer,TicketSerializer
 
 from .models import Customer,Movie_detail,Ticket_detail
+
+from datetime import datetime, timedelta
 # Create your views here.
 
 @api_view(['GET'])
@@ -128,7 +130,6 @@ def MovieTime(request, mt):
 #@api_view(['GET'])
 @api_view(['DELETE'])
 def MovieRangeDelete(request):
-	from datetime import datetime, timedelta
 	time_threshold = datetime.now() + timedelta(hours=8)
 	event=Movie_detail.objects.filter(movie_time__range=(datetime.now(),time_threshold))
 	#serializer = MovieSerializer(event, many=True)
@@ -138,7 +139,6 @@ def MovieRangeDelete(request):
 
 @api_view(['GET'])
 def MovieRangeView(request):
-	from datetime import datetime, timedelta
 	time_threshold = datetime.now() + timedelta(hours=8)
 	event=Movie_detail.objects.filter(movie_time__range=(datetime.now(),time_threshold))
 	serializer = MovieSerializer(event, many=True)
