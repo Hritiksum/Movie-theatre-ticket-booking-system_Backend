@@ -12,11 +12,17 @@ from datetime import datetime, timedelta
 @api_view(['GET'])
 def apiOverview(request):
 	api_urls = {
-		'Movie':'/movie-list/',
-		'Customer':'/customer-details/<str:name>/',
-		'Buy':'/buy-tickets',#'Create':'/task-create/',
-		'Update':'/ticket-update/<str:pk>/',
+		'Movie':'/availticketlist//',
+		'Tickek_Ordered_List':'/ordered-ticketlist/',
+		'Customer_Details':'/user-details/<str:pk>/',
+		'Buy':'/buy-ticket/',
+		'Time_Update':'/update-movie-timing/<str:pk>/',
 		'Delete':'/ticket-delete/<str:pk>/',
+		'MovieID_Details':'/movie-details/<str:Mid>/',
+		'MovieID_Delete':'/movie-delete/<str:Mid>/',
+		'MovieList_ParticularTime':'/movie-time/<str:mt>/',
+		'MovieList_Under8Hrs':'/movie-range-view/',
+		'Delete_MovieList_Under8Hrs':'/movie-range-delete/',
 		}
 
 	return Response(api_urls)
