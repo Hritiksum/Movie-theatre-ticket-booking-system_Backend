@@ -79,7 +79,7 @@ http://127.0.0.1:8000/api/movie-range-view/
 ![automated testing](movielistdeleteunder8Hrs.png)
 http://127.0.0.1:8000/api/movie-range-delete/
 <ul>
- <il>Will DELETE the list of all movies which have diff of 8 hours between the ticket timing and current time.</il>
+ <li>Will DELETE the list of all movies which have diff of 8 hours between the ticket timing and current time.</li>
 </ul>
 
 
@@ -88,7 +88,7 @@ http://127.0.0.1:8000/api/movie-range-delete/
 ![automated testing](movielistwithparticulartime.png)
 http://127.0.0.1:8000/api/avail-ticketlist/
 <ul>
- <il>Will return json reponse list of all the movie having same data time</il>
+ <li>Will return json reponse list of all the movie having same data time</li>
 </ul>
 
 ## GET REST API to get the list of all buyed tickets
@@ -96,7 +96,7 @@ http://127.0.0.1:8000/api/avail-ticketlist/
 ![automated testing](ticketorderdlist.png)
 http://127.0.0.1:8000/api/avail-ticketlist/
 <ul>
- <il>will return details of all the buyed tickes</il>
+ <li>will return details of all the buyed tickes</li>
 </ul>
 
 ## POST REST API to Update movie time
@@ -104,7 +104,7 @@ http://127.0.0.1:8000/api/avail-ticketlist/
 ![automated testing](updatemoviedetails.png)
 http://127.0.0.1:8000/api/avail-ticketlist/
 <ul>
- <il>POST Rest Api to update movie name and time</il>
+ <li>POST Rest Api to update movie name and time</li>
  <li>{"movie_name": "Kedarnath","movie_time": "2020-08-31T12:00:00Z"}</li>
  <li>Movie id will automatically update</li>
 </ul>
@@ -114,5 +114,5 @@ http://127.0.0.1:8000/api/avail-ticketlist/
 ![automated testing](userdetailsbyticketid.png)
 http://127.0.0.1:8000/api/avail-ticketlist/
 <ul>
- <il>to get the customer details from orderd ticket id</il>
+ <li>to get the customer details from orderd ticket id</li>
 </ul>
