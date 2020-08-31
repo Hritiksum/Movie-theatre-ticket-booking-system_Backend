@@ -4,4 +4,4 @@
  Python, Django(Framework), SQLite database
  
  **SQLite database**
- ![automated testing](/PostmanScreenshot/Sql table daigram.png)
+ ![automated testing](sqltabledaigram.png)
