@@ -27,7 +27,7 @@ http://127.0.0.1:8000/api/avail-ticketlist/
 
 ## POST REST API to Buy tickets
 ***************************
-![automated testing](buytickets.png)
+![automated testing](buyticket.png)
 http://127.0.0.1:8000/api/buy-ticket/
 ● Post api to buy tickets not more than 20 tickets.
 ● POST request format:
