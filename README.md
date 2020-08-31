@@ -42,4 +42,4 @@
 ![automated testing](updatemoviedetails.png)
 
 **GET REST API to get customer deatils by ticket ordered id**
-![automated testing](userdetailsbyticket id.png)
+![automated testing](userdetailsbyticketid.png)
