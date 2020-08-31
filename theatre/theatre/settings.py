@@ -25,7 +25,7 @@ SECRET_KEY = 'zesm$d%+9q(pvl#bxj0q0x&gv%hl3*)6fmjsoho+3ufe247^c3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
