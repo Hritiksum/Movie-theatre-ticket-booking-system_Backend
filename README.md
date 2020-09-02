@@ -9,7 +9,7 @@
  <ul>
   <li>Customer table     (ID,Name,phone number,time)</li>
   <li>Movie table        (ID,Movie name,Movie time)</li>
-  <li>Ticket Order table (ID,Customer key,Movie key,No. of tickets ordered)</li>
+  <li>Ticket Order table (ID,Customer key,Movie key,Quantity of tickets ordered<=20)</li>
 </ul>
 
  
